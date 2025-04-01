@@ -1,0 +1,40 @@
+html {
+    background-color: #1e1e1e;
+    color: #f1f5f9;
+}
+
+body {
+margin: 0 auto;
+width: 100%;
+max-width: 60ch;
+padding: 1rem;
+line-height: 1.5;
+font-family: -apple-system, BlinkMacSystemFont, "BIZ UDPゴシック", Meiryo, sans-serif;
+}
+
+* {
+box-sizing: border-box;
+}
+
+a {
+    color: #f1f5f9;
+    text-decoration: underline;
+    text-decoration-color: #0ea5e9;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 2px;
+}
+  
+a:hover {
+color: #0ea5e9;
+}
+
+h1{
+  font-size: 150%;
+}
+
+.pubDate {
+    font-size: 0.8em;
+    margin-right: 0.5em;
+    font-style: italic;
+    color:#94a3b8
+}

@@ -1,0 +1,5 @@
+---
+const { title, url, pubDate } = Astro.props
+import "../styles/global.css"
+---
+<li><span class="pubDate">{pubDate}</span><a href={url}>{title}</a></li>

@@ -1,0 +1,21 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import BlogPost from "../components/BlogPost.astro";
+const pageTitle = "Blog Posts";
+const allPosts = Object.values(await import.meta.glob('./posts/*.md', { eager: true }));
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <ul class="blog-posts">
+    {allPosts.reverse().map((post:any) => <BlogPost url={post.url} title={post.frontmatter.title} pubDate={post.frontmatter.pubDate} />)}
+  </ul>
+</BaseLayout>
+
+<style>
+.blog-posts {
+  margin-left: 0;
+  padding-left: 0;
+  list-style-type: none;
+  line-height: 1.7;
+}
+</style>
