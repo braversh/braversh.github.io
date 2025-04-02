@@ -1,6 +1,7 @@
 html {
     background-color: #1e1e1e;
     color: #f1f5f9;
+    overflow-y: scroll;
 }
 
 body {
@@ -20,8 +21,8 @@ a {
     color: #f1f5f9;
     text-decoration: underline;
     text-decoration-color: #0ea5e9;
-    text-underline-offset: 3px;
-    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1.5px;
 }
   
 a:hover {
@@ -32,9 +33,37 @@ h1{
   font-size: 150%;
 }
 
+sup a{
+    font-size: 0.8em;
+}
+
 .pubDate {
     font-size: 0.8em;
     margin-right: 0.5em;
     font-style: italic;
     color:#94a3b8
+}
+
+.footnotes{
+    border-top: 1px solid #94a3b8;
+    font-size: 0.9em;
+    color: #94a3b8
+}
+
+.footnotes a{ 
+    font-size: 0.9em;
+    color: #94a3b8
+}
+
+.footnotes ol{
+    padding-left: 1.5em;
+    margin-left: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    line-height: 0.8em;
+    
+}
+
+.footnotes h2{
+    display: none;
 }
