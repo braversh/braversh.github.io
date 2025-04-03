@@ -7,14 +7,18 @@ const { pageTitle } = Astro.props;
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-    <meta name="google-site-verification" content="_rMsPV9gCUyQUB4VBTEZgTcw38z33_0P8DR-6DaXXwI" />
+    <meta
+      name="google-site-verification"
+      content="_rMsPV9gCUyQUB4VBTEZgTcw38z33_0P8DR-6DaXXwI"
+    />
+    <link rel="sitemap" href="/sitemap-index.xml" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
   </head>
   <body>
     <Header />
-	<h1>{pageTitle}</h1>
+    <h1>{pageTitle}</h1>
     <slot />
   </body>
 </html>
