@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://braversh.github.io/sitemap-index.xml
