@@ -23,6 +23,11 @@ html {
   overflow-y: scroll;
 }
 
+nav a{
+  font-size: 0.9rem;
+  line-height: 3rem;
+}
+
 body {
   margin: 0 auto;
   width: 100%;
@@ -58,12 +63,24 @@ h2 {
 }
 
 sup a {
-  font-size: 0.8em;
+  font-size: 0.7rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.blog-title h3 {
+  margin: 0;
+  line-height: 3rem;
 }
 
 .pubDate {
-  font-size: 0.8em;
-  margin-right: 0.5em;
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
   font-style: italic;
   color: var(--color-text-sub);
 }
@@ -77,23 +94,23 @@ sup a {
 
 .footnotes {
   border-top: 1px solid var(--color-text-sub);
-  font-size: 0.9em;
+  font-size: 0.9rem;
   color: var(--color-text-sub);
 }
 
 .footnotes a {
-  font-size: 0.9em;
+  font-size: 0.9rem;
   color: var(--color-text-sub);
 }
 
 .footnotes ol {
-  padding-left: 1.5em;
+  padding-left: 1.5rem;
   margin-left: 0;
   padding-bottom: 0;
   margin-bottom: 0;
   padding-top: 0;
   margin-top: 0;
-  line-height: 1.2em;
+  line-height: 1.2rem;
 }
 
 .footnotes li {
