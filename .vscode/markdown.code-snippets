@@ -23,4 +23,20 @@
         ],
         "description": "Snippet for blog"
     },
+
+    "Markdown Snippet2": {
+        "prefix": "scrap",
+        "body": [
+            "---",
+            "layout: ../../layouts/ScrapPostLayout.astro",
+            "title: ",
+            "pubDate: ",
+            "---",
+            "import ScrapBlock from '../../components/ScrapBlock.astro';",
+            "",
+            "<ScrapBlock date=''>",
+            "</ScrapBlock>",
+        ],
+        "description": "Snippet for scrap"
+    },
 }

@@ -1,0 +1,12 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+const { frontmatter } = Astro.props;
+import "../styles/global.css";
+---
+
+<BaseLayout pageTitle={frontmatter.title}>
+  <div class="scrap-block">
+    <div class="vertical-line"></div>
+    <slot />
+  </div>
+</BaseLayout>

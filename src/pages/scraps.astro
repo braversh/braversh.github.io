@@ -1,0 +1,24 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import BlogPost from "../components/BlogPost.astro";
+const pageTitle = "All scraps";
+const allPosts = Object.values(
+  await import.meta.glob("./scraps/*.mdx", { eager: true })
+);
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <ul class="blog-posts">
+    {
+      allPosts
+        .reverse()
+        .map((post: any) => (
+          <BlogPost
+            url={post.url}
+            title={post.frontmatter.title}
+            pubDate={post.frontmatter.pubDate}
+          />
+        ))
+    }
+  </ul>
+</BaseLayout>
