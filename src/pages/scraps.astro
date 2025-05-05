@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import BlogPost from "../components/BlogPost.astro";
-const pageTitle = "All scraps";
+const pageTitle = "All Scraps";
 const allPosts = Object.values(
   await import.meta.glob("./scraps/*.mdx", { eager: true })
 );
