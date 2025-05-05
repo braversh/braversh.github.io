@@ -1,11 +1,17 @@
 :root {
-  --color-bg: #1e1e1e;
-  --color-text: #f1f5f9e4;
-  --color-text-sub: #94a3b8;
-  --color-link: #0ea5e9;
+  --color-bg: #fffdfc;
+  --color-text: #141400;
+  --color-text-sub: #495059;
+  --color-link: #ffcd00;
 }
 
 @media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #1e1e1e;
+    --color-text: #f1f5f9e4;
+    --color-text-sub: #94a3b8;
+    --color-link: #0ea5e9;
+  }
   .astro-code,
   .astro-code span {
     color: var(--shiki-dark) !important;
