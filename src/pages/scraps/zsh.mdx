@@ -1,0 +1,16 @@
+---
+layout: ../../layouts/ScrapPostLayout.astro
+title: zsh覚書
+pubDate: 2025, May 06
+---
+import ScrapBlock from '../../components/ScrapBlock.astro';
+
+<ScrapBlock date='2025-05-06'>
+POSIX互換なシェルが使いたくなってきたので仮想環境内のUbuntuのシェルをfishからzshへ移行。備忘録を兼ねてちまちま記録することにした。
+
+環境変数の追加
+以下の議論が参考になる。
+https://stackoverflow.com/questions/10574684/where-to-place-path-variable-assertions-in-zsh
+
+書けるところは色々あるが、$ZDOTDIR/.zshenvに書くことにした。なお、$ZDOTDIRはデフォルトで$HOME。
+</ScrapBlock>
