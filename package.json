@@ -1,8 +1,8 @@
 {
-  "name": "",
+  "name": "blog",
   "type": "module",
   "version": "0.0.1",
-  "pacakageManager": "pnpm@10.26.0",
+  "packageManager": "pnpm@10.26.0",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
